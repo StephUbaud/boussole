@@ -17,17 +17,17 @@ def on_forever2():
     if direction > 337.5 or direction <= 22.5:
         basic.show_arrow(ArrowNames.NORTH)
     if direction > 22.5 and direction <= 67.5:
-        basic.show_arrow(ArrowNames.NORTH_EAST)
+        basic.show_arrow(ArrowNames.NORTH_WEST)
     if direction > 67.5 and direction <= 112.5:
-        basic.show_arrow(ArrowNames.EAST)
+        basic.show_arrow(ArrowNames.WEST)
     if direction > 112.5 and direction <= 157.5:
-        basic.show_arrow(ArrowNames.SOUTH_EAST)
+        basic.show_arrow(ArrowNames.SOUTH_WEST)
     if direction > 157.5 and direction <= 202.5:
         basic.show_arrow(ArrowNames.SOUTH)
     if direction > 202.5 and direction <= 247.5:
-        basic.show_arrow(ArrowNames.SOUTH_WEST)
+        basic.show_arrow(ArrowNames.SOUTH_EAST)
     if direction > 247.5 and direction <= 292.5:
-        basic.show_arrow(ArrowNames.WEST)
+        basic.show_arrow(ArrowNames.EAST)
     if direction > 292.5 and direction <= 337.5:
-        basic.show_arrow(ArrowNames.NORTH_WEST)
+        basic.show_arrow(ArrowNames.NORTH_EAST)
 basic.forever(on_forever2)
